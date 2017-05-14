@@ -19,27 +19,41 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:baselineAligned="false">
 
         <Button
             android:text="始め！"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/start_button_id"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textColor="@android:color/background_light"
+            android:background="@color/colorAccent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="25sp" />
 
         <Button
             android:text="やめ！"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/stop_button_id"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/background_light"
+            android:layout_marginRight="5dp"
+            android:textSize="25sp" />
 
         <Button
             android:text="やりなおし"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/reset_button_id"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/background_light"
+            android:layout_marginRight="5dp"
+            android:textSize="22sp" />
     </LinearLayout>
 </LinearLayout>

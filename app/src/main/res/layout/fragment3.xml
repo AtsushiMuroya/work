@@ -29,6 +29,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/button"
             android:layout_weight="1"
-            android:width="1dp" />
+            android:width="1dp"
+            android:onClick="add" />
     </LinearLayout>
 </LinearLayout>

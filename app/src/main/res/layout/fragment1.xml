@@ -10,7 +10,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:textSize="50sp"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:lineSpacingExtra="24sp"
+        android:textColor="@android:color/background_dark" />
 
     <ImageView
         android:layout_height="350dp"
@@ -20,7 +23,11 @@
 
     <Button
         android:text="にんにくいれますか？"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button" />
+        android:id="@+id/button"
+        android:background="@color/colorAccent"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_light"
+        android:layout_gravity="center_horizontal" />
 </LinearLayout>
