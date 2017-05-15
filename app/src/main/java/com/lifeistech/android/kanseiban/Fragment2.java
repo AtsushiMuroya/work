@@ -1,6 +1,7 @@
 package com.lifeistech.android.kanseiban;
 
-import android.app.Fragment;
+//import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.LayoutInflater;
@@ -21,18 +22,18 @@ public class Fragment2 extends Fragment {
     Chronometer c;
     boolean chk = false;
 
-    public Fragment2() {
+   /* public Fragment2() {
     }
 
     public static Fragment2 newInstance() {
         Fragment2 fragment = new Fragment2();
         return fragment;
-    }
+    }*/
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment2, container, false);
-        final Chronometer c = (Chronometer)view.findViewById(R.id.chronometer_id);
+        /*final Chronometer*/ c = (Chronometer)view.findViewById(R.id.chronometer_id);
         st_b = (Button)view.findViewById(R.id.start_button_id);
         sp_b = (Button)view.findViewById(R.id.stop_button_id);
         rt_b = (Button)view.findViewById(R.id.reset_button_id);

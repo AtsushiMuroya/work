@@ -11,12 +11,14 @@
         android:id="@+id/textView"
         android:textSize="50sp"
         android:gravity="center_horizontal"
-        android:layout_margin="10dp"
+        android:layout_margin="25dp"
         android:lineSpacingExtra="24sp"
-        android:textColor="@android:color/background_dark" />
+        android:textColor="@android:color/background_dark"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp" />
 
     <ImageView
-        android:layout_height="350dp"
+        android:layout_height="300dp"
         app:srcCompat="@drawable/jiro"
         android:id="@+id/imageView"
         android:layout_width="match_parent" />

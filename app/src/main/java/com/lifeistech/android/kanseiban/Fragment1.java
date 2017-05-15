@@ -18,13 +18,13 @@ public class Fragment1 extends Fragment {
     Button button;
     TextView text;
 
-    public Fragment1() {
+    /*public Fragment1() {
     }
 
     public static Fragment1 newInstance() {
         Fragment1 fragment = new Fragment1();
         return fragment;
-    }
+    }*/
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

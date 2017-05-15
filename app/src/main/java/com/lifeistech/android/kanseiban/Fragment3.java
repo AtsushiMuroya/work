@@ -1,6 +1,7 @@
 package com.lifeistech.android.kanseiban;
 
-import android.app.Fragment;
+//import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,13 +21,13 @@ public class Fragment3 extends Fragment {
     EditText editText;
     ArrayAdapter adapter;
 
-    public Fragment3() {
+    /*public Fragment3() {
     }
 
     public static Fragment3 newInstance() {
         Fragment3 fragment = new Fragment3();
         return fragment;
-    }
+    }*/
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -65,7 +66,7 @@ public class Fragment3 extends Fragment {
             }
         });
     }
-    public void add (View v){
+    public void add(View view){
         String text;
         text = editText.getText().toString();
         Toast.makeText(getActivity(),text,Toast.LENGTH_SHORT).show();

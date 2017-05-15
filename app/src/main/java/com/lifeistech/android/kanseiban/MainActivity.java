@@ -21,11 +21,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public Fragment getItem(int position) {
                 if(position == 0 ) {
-                return Fragment1.newInstance();
+                return new Fragment1();
                 }else if (position == 1){
-                    return Fragment2.newInstance();
+                    return new Fragment2();
+                }else if (position == 2){
+                    return new Fragment3();
                 }else{
-                    return Fragment3.newInstance();
+                    return new Fragment4();
                 }
             }
 
@@ -36,17 +38,33 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public int getCount() {
-                return 3;
+                return 4;
             }
         };
 
         viewPager.setAdapter(adapter);
-        viewPager.addOnPageChangeListener(this);
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+        //viewPager.addOnPageChangeListener(this);
 
         //オートマチック方式: これだけで両方syncする
-        tabLayout.setupWithViewPager(viewPager);
+         tabLayout.setupWithViewPager(viewPager);
 
-        //マニュアル方式: これでViewPagerのPositionとTabのPositionをsyncさせるらしい
+      /*  //マニュアル方式: これでViewPagerのPositionとTabのPositionをsyncさせるらしい
         //tabLayout.setTabsFromPagerAdapter(adapter);
         //viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         //tabLayout.setOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(viewPager));
@@ -66,5 +84,5 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onPageScrollStateChanged(int state) {
 
-    }
-}
+    }*/
+}}
