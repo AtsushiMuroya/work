@@ -1,4 +1,4 @@
-package com.lifeistech.kimimojirorian.kanseiban;
+package sora.jiro.jirorian;
 
 //import android.app.Fragment;
 import android.support.v4.app.Fragment;

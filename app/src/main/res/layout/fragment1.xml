@@ -4,24 +4,24 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/p2jiro"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent" />
+
     <TextView
         android:text="今日の二郎"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
-        android:textSize="50sp"
+        android:textSize="30sp"
         android:gravity="center_horizontal"
         android:layout_margin="25dp"
         android:lineSpacingExtra="24sp"
         android:textColor="@android:color/background_dark"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="50dp" />
-
-    <ImageView
-        android:layout_height="300dp"
-        app:srcCompat="@drawable/jiro"
-        android:id="@+id/imageView"
-        android:layout_width="match_parent" />
 
     <Button
         android:text="にんにくいれますか？"
@@ -31,5 +31,6 @@
         android:background="@color/colorAccent"
         android:textSize="20sp"
         android:textColor="@android:color/background_light"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp" />
 </LinearLayout>

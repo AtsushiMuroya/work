@@ -1,4 +1,4 @@
-package com.lifeistech.kimimojirorian.kanseiban;
+package sora.jiro.jirorian;
 
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
                 if(position == 0 ) {
                 return new Fragment1();
                 }else if (position == 1){
-                    return new Fragment2();
-                }else if (position == 2){
                     return new Fragment3();
+                }else if (position == 2){
+                    return new Fragment2();
                 }else{
                     return new Fragment4();
                 }
