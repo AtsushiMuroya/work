@@ -1,4 +1,4 @@
-package com.lifeistech.android.kanseiban;
+package com.lifeistech.kimimojirorian.kanseiban;
 
 import org.junit.Test;
 

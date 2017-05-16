@@ -17,12 +17,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="今日の二郎"
             android:ems="10"
             android:id="@+id/editText"
             android:layout_weight="4"
             android:width="4dp"
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            android:text="今日のイメ二郎（どう攻める？）" />
 
         <Button
             android:text="投稿"
@@ -31,7 +31,6 @@
             android:id="@+id/button"
             android:layout_weight="1"
             android:width="1dp"
-            android:onClick="add"
             android:textColor="@android:color/background_light"
             android:background="@color/colorAccent"
             android:layout_margin="5dp" />
